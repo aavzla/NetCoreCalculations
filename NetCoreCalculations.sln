@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreCalculations", "NetCoreCalculations\NetCoreCalculations.csproj", "{FFD61F44-759E-4596-91D5-DFA8275BC6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculations.Tests", "Calculations.Tests\Calculations.Tests.csproj", "{9FC20D89-215F-4956-9E93-906149D51D9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC20D89-215F-4956-9E93-906149D51D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC20D89-215F-4956-9E93-906149D51D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC20D89-215F-4956-9E93-906149D51D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC20D89-215F-4956-9E93-906149D51D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B83C986B-CDDB-42B4-BAED-61A9F0B6B014}
+	EndGlobalSection
+EndGlobal
