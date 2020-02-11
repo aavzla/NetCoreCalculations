@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreCalculations", "NetCoreCalculations\NetCoreCalculations.csproj", "{FFD61F44-759E-4596-91D5-DFA8275BC6E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreCalculations.Tests", "Calculations.Tests\NetCoreCalculations.Tests.csproj", "{9FC20D89-215F-4956-9E93-906149D51D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreCalculations.Tests", "NetCoreCalculations.Tests\NetCoreCalculations.Tests.csproj", "{906E59AF-0D27-4E5C-A913-01FEE1D648B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD61F44-759E-4596-91D5-DFA8275BC6E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FC20D89-215F-4956-9E93-906149D51D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FC20D89-215F-4956-9E93-906149D51D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FC20D89-215F-4956-9E93-906149D51D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FC20D89-215F-4956-9E93-906149D51D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906E59AF-0D27-4E5C-A913-01FEE1D648B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906E59AF-0D27-4E5C-A913-01FEE1D648B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906E59AF-0D27-4E5C-A913-01FEE1D648B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906E59AF-0D27-4E5C-A913-01FEE1D648B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
