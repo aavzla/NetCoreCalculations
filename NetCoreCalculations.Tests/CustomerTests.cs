@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System;
+using Xunit;
 
 namespace NetCoreCalculations.Tests
 {
@@ -17,6 +18,31 @@ namespace NetCoreCalculations.Tests
         {
             var customer = new Customer();
             Assert.InRange(customer.Age, 25, 45);
+        }
+
+        [Fact]
+        public void GetOrdersByNameThrowsArgumentException()
+        {
+            var customer = new Customer();
+            var exceptionDetails = Assert.Throws<ArgumentException>(() => customer.GetOrdersByName(null));
+            Assert.NotNull(exceptionDetails.Message);
+            Assert.NotEmpty(exceptionDetails.Message);
+            Assert.NotNull(exceptionDetails.ParamName);
+            Assert.NotEmpty(exceptionDetails.ParamName);
+        }
+
+        [Fact]
+        public void GetOrdersByNameGet100()
+        {
+            var customer = new Customer();
+            Assert.Equal(100, customer.GetOrdersByName(customer.Name));
+        }
+
+        [Fact]
+        public void GetOrdersByNameGetZero()
+        {
+            var customer = new Customer();
+            Assert.Equal(0, customer.GetOrdersByName("Doe"));
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace NetCoreCalculations
 {
@@ -8,5 +6,19 @@ namespace NetCoreCalculations
     {
         public string Name => "John";
         public int Age => 43;
+        public int OrdersQty => 100;
+
+        public int GetOrdersByName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentException("The value submitted was null, string empty or only white spaces", nameof(name));
+            }
+            if (Name.Equals(name))
+            {
+                return OrdersQty;
+            }
+            return 0;
+        }
     }
 }
