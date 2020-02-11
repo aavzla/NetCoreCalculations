@@ -1,7 +1,6 @@
-﻿using NetCoreCalculations;
-using Xunit;
+﻿using Xunit;
 
-namespace Calculations.Tests
+namespace NetCoreCalculations.Tests
 {
     public class NamesTests
     {
