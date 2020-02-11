@@ -6,6 +6,7 @@ namespace NetCoreCalculations.Tests
     public class FibonacciTests
     {
         [Fact]
+        [Trait("Category", "Fibo")]
         public void FiboNumbersDoesNotIncludeZero()
         {
             var fibo = new Fibonacci();
@@ -13,6 +14,7 @@ namespace NetCoreCalculations.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void FiboNumbersIncludesAtLeast13()
         {
             var fibo = new Fibonacci();
@@ -20,6 +22,7 @@ namespace NetCoreCalculations.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void FiboNumbersDoesNotInclude4()
         {
             var fibo = new Fibonacci();
@@ -27,6 +30,7 @@ namespace NetCoreCalculations.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void CheckCollection()
         {
             var expectedCollection = new List<int>() { 1, 1, 2, 3, 5, 8, 13 };
