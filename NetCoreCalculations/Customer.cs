@@ -8,7 +8,7 @@ namespace NetCoreCalculations
         public int Age => 43;
         public int OrdersQty => 100;
 
-        public int GetOrdersByName(string name)
+        public virtual int GetOrdersByName(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
