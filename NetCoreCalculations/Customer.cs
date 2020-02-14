@@ -20,5 +20,10 @@ namespace NetCoreCalculations
             }
             return 0;
         }
+
+        public string GetFullName(string firstName, string lastName)
+        {
+            return $"{firstName} {lastName}";
+        }
     }
 }
