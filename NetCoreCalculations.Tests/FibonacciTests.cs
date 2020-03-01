@@ -71,5 +71,14 @@ namespace NetCoreCalculations.Tests
             var result = fibo.Is1Number(value);
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [MemberData(nameof(TestDataShared.IsOddOrEvenNumbersExternalData), MemberType = typeof(TestDataShared))]
+        public void IsOddOrEvenFromExternalData_GivenValue_ReturnsBool(int value, bool expected)
+        {
+            var fibo = new Fibonacci();
+            var result = fibo.IsOddValue(value);
+            Assert.Equal(expected, result);
+        }
     }
 }

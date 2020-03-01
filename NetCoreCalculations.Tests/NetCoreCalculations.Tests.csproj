@@ -20,4 +20,10 @@
     <ProjectReference Include="..\NetCoreCalculations\NetCoreCalculations.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="DataShared\IsOddOrEvenTestData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
