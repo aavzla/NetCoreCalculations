@@ -11,5 +11,14 @@ namespace NetCoreCalculations
             //If the result is zero, it is a even number, if it is not is an Odd number.
             return (value % 2) == 1;
         }
+
+        public bool Is1Number(int value)
+        {
+            if (value == 1)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

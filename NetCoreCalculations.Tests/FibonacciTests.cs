@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using NetCoreCalculations.Tests.DataShared;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -54,12 +55,20 @@ namespace NetCoreCalculations.Tests
         }
 
         [Theory]
-        [InlineData(1, true)]
-        [InlineData(200, false)]
+        [MemberData(nameof(TestDataShared.IsOddOrEvenNumbers), MemberType = typeof(TestDataShared))] //This line can be used with other test in order to re-use the data.
         public void IsOddOrEvenValue_GivenValue_ReturnsBool(int value, bool expected)
         {
             var fibo = new Fibonacci();
             var result = fibo.IsOddValue(value);
+            Assert.Equal(expected, result);
+        }
+
+        [Theory]
+        [MemberData(nameof(TestDataShared.IsOddOrEvenNumbers), MemberType = typeof(TestDataShared))] //This line can be used with other test in order to re-use the data.
+        public void Is1Number_GivenValue_ReturnsBool(int value, bool expected)
+        {
+            var fibo = new Fibonacci();
+            var result = fibo.Is1Number(value);
             Assert.Equal(expected, result);
         }
     }
