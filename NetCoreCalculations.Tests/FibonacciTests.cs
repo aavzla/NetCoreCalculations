@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NetCoreCalculations.Tests.DataShared;
+using NetCoreCalculations.Tests.DataShared.DataAttributes;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -75,6 +76,15 @@ namespace NetCoreCalculations.Tests
         [Theory]
         [MemberData(nameof(TestDataShared.IsOddOrEvenNumbersExternalData), MemberType = typeof(TestDataShared))]
         public void IsOddOrEvenFromExternalData_GivenValue_ReturnsBool(int value, bool expected)
+        {
+            var fibo = new Fibonacci();
+            var result = fibo.IsOddValue(value);
+            Assert.Equal(expected, result);
+        }
+
+        [Theory]
+        [IsOddOrEvenDataAttribute]
+        public void IsOddOrEvenFromCustomAttribute_GivenValue_ReturnsBool(int value, bool expected)
         {
             var fibo = new Fibonacci();
             var result = fibo.IsOddValue(value);
