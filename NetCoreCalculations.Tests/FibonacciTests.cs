@@ -52,5 +52,15 @@ namespace NetCoreCalculations.Tests
             var fibo = new Fibonacci();
             Assert.Equal(expectedCollection, fibo.FiboNumbers);
         }
+
+        [Theory]
+        [InlineData(1, true)]
+        [InlineData(200, false)]
+        public void IsOddOrEvenValue_GivenValue_ReturnsBool(int value, bool expected)
+        {
+            var fibo = new Fibonacci();
+            var result = fibo.IsOddValue(value);
+            Assert.Equal(expected, result);
+        }
     }
 }
